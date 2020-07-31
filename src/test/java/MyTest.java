@@ -91,10 +91,44 @@ public class MyTest {
 
     @Test
     public void testIfNamesIndexMatch() {
-        System.out.println(names);
         assertSame("Sarah", this.names.get(0));
         assertNotSame("Joanne", this.names.get(1));
     }
+
+    //Junit Warmup exercises
+    @Test
+    public void testIfListsAreSame() {
+        List<String> languages = new ArrayList<>();
+        List<String> moreLanguages = new ArrayList<>();
+        languages.add("english");
+        moreLanguages.add("spanish");
+        moreLanguages.add("portuguese");
+
+        assertNotSame(languages, moreLanguages);
+    }
+
+    @Test
+    public void testIfArraysAreEqual() {
+
+        int[] numbers = {1, 2, 4};
+        int[] otherNumbers = new int[3];
+        otherNumbers[0] = 1;
+        otherNumbers[1] = 2;
+        otherNumbers[2] = 4;
+
+        assertArrayEquals(numbers, otherNumbers);
+    }
+
+    @Test
+    public void testIfStatementsAreTrueOrFalse() {
+        String language = "PHP";
+        boolean languageContainsH = language.contains("H");
+        boolean languageContainsJ = language.contains("J");
+
+        assertTrue("language contains 'H'", languageContainsH);
+        assertFalse("language contains 'J'", languageContainsJ);
+    }
+
 
 }
 
