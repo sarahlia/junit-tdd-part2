@@ -44,5 +44,17 @@ public class MyTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void testIfBooleanWorks() {
+
+        boolean skyIsBlue = true;
+        boolean fourIsGreater = 4 > 3;
+        boolean fiveIsLess = 5 < 2;
+
+        assertTrue(skyIsBlue);
+        assertTrue("four is greater than three", fourIsGreater);
+        assertFalse("five is less than two", fiveIsLess);
+    }
+
 }
 
