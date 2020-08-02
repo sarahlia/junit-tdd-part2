@@ -28,6 +28,7 @@ public class Crypt {
                     break;
                 default:
                     hash += character;
+                    break;
             }
         }
         return hash;

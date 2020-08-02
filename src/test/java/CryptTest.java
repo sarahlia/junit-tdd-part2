@@ -7,7 +7,7 @@ public class CryptTest {
     public void testIfVersionIsInitialized() {
         assertEquals(0.0, Crypt.VERSION, 0);
         Crypt.VERSION = 1.2;
-        assertNotEquals(1.5, Crypt.VERSION, 0);
+        assertNotEquals(2, Crypt.VERSION, 0);
     }
 
     @Test
