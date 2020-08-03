@@ -48,4 +48,12 @@ public class CohortTest {
         assertNotEquals(90.5, aCohort.getCohortAverage(), 0.1 );
     }
 
+    @Test
+    public void testFindStudentByIdMethod() {
+//        aCohort.findStudentById(1L).getName(); //emi
+//        aCohort.findStudentById(2L).getName(); //jack
+        assertEquals("emi", aCohort.findStudentById(1L).getName());
+        assertNotEquals("brad", aCohort.findStudentById(2L).getName());
+    }
+
 }
